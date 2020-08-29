@@ -2,5 +2,23 @@
   "name": "Universal Web Emoji Rating",
   "version": "1.0",
   "description": "Rate & view ratings of every web page using emojis",
+  "permissions": ["declarativeContent", "storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/good-face-32.png",
+      "32": "images/good-face-32.png",
+      "48": "images/good-face-32.png"
+    }
+  },
+  "icons": {
+    "16": "images/good-face-32.png",
+    "32": "images/good-face-32.png",
+    "48": "images/good-face-32.png"
+  },
   "manifest_version": 2
 }

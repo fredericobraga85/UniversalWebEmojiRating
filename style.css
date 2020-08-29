@@ -1,0 +1,19 @@
+.btn {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30px;
+  width: 30px;
+  border: none;
+}
+
+#btnRateBad {
+  background-image: url('images/bad-face-32.png');
+}
+
+#btnRateMeh {
+  background-image: url('images/neutral-face-32.png');
+}
+
+#btnRateGood {
+  background-image: url('images/good-face-32.png');
+}

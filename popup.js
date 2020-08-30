@@ -3,13 +3,16 @@ let btnRateMeh = document.getElementById('btnRateMeh')
 let btnRateGood = document.getElementById('btnRateGood')
 
 btnRateBad.onclick = function (element) {
-  alert('Bad!')
+  chrome.extension.getBackgroundPage().rateUrl(0)
+  window.close()
 }
 
 btnRateMeh.onclick = function (element) {
-  alert('Meh!')
+  chrome.extension.getBackgroundPage().rateUrl(2.5)
+  window.close()
 }
 
 btnRateGood.onclick = function (element) {
-  alert('Good!')
+  chrome.extension.getBackgroundPage().rateUrl(5)
+  window.close()
 }

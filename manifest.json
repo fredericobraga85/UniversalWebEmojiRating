@@ -2,7 +2,7 @@
   "name": "Universal Web Emoji Rating",
   "version": "1.0",
   "description": "Rate & view ratings of every web page using emojis",
-  "permissions": ["declarativeContent", "storage", "tabs"],
+  "permissions": ["storage", "tabs"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false

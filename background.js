@@ -1,6 +1,15 @@
 chrome.tabs.onActivated.addListener(onActiveTabChange)
+chrome.tabs.onUpdated.addListener(onTabUrlChange)
 
 function onActiveTabChange() {
+  setCurrentUrl()
+}
+
+function onTabUrlChange() {
+  setCurrentUrl()
+}
+
+function setCurrentUrl() {
   chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
     let url = tabs[0].url
     saveCurrentUrl(url, function () {
